@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -19,7 +20,8 @@ import { PaisesComponent } from './paises/paises.component';
   imports: [
     BrowserModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
